@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #623aa2;
+  --secondary-color: #e2e7ec;
+  --font-color: #444444;
+  --font-weight-bold: 500;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fcfcfc;
+  color: var(--font-color);
+  -webkit-transition: all 10000ms ease-in;
+  transition: all 10000ms ease-in;
+}
+
+.main:after {
+  content: "";
+  height: 16.1rem;
+  background-image: -webkit-gradient(linear, right top, left top, from(#9853af), to(#623AA2));
+  background-image: linear-gradient(to left, #9853af, #623AA2);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+}
+
+.app-header {
+  border-bottom: 2px solid #eee;
+  padding: 1.6rem 0;
+  background-color: #fff;
+}
+
+.app-logo {
+  padding: 0 3.2rem;
+}
+
+.app-logo img {
+  width: 8vw;
+}
+
+.app-logo span {
+  padding: 0 3.2rem;
+  font-size: 1.4rem;
+  vertical-align: bottom;
+  font-weight: var(--font-weight-bold);
+}
+
+.lists {
+  margin-top: 4rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.lists .heading {
+  margin: 1rem 0rem 3rem 0rem;
+  color: #fff;
+}
+
+.lists .card {
+  -webkit-box-shadow: 0 16px 26px 0 #c6c6c8cc, 0 3px 6px 0 #c6c6c633;
+          box-shadow: 0 16px 26px 0 #c6c6c8cc, 0 3px 6px 0 #c6c6c633;
+  border-radius: 7px;
+  margin-bottom: 3rem;
+}
+
+.lists .card-header,
+.lists .card-body {
+  padding: 1.4rem 2rem 1.4rem 2rem;
+  background-color: transparent;
+}
+
+.lists .card-header h3 {
+  margin-bottom: 0;
+}
+
+.lists .card-header span {
+  position: absolute;
+  right: 2rem;
+  top: .8rem;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.33333333;
+  border-radius: 3px;
+  min-width: 1.625rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#9853af), to(#623AA2));
+  background: linear-gradient(to bottom right, #9853af, #623AA2);
+  border-color: #913ad8;
+}
+
+.lists .card-body {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.lists .btn-compute {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  font-weight: var(--font-weight-bold);
+  -webkit-box-shadow: 0 2px 2px 0 #99999924, 0 3px 1px -2px #99999933, 0 1px 5px 0 #9999991f;
+          box-shadow: 0 2px 2px 0 #99999924, 0 3px 1px -2px #99999933, 0 1px 5px 0 #9999991f;
+  width: 16rem;
+  margin: 3rem auto 2rem auto;
+}
+
+.lists .btn-compute:hover, .lists .btn-compute:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #7944a7;
+  -webkit-box-shadow: 0 14px 26px -12px #9999996b, 0 4px 23px 0px #0000001f, 0 8px 10px -5px #99999933;
+          box-shadow: 0 14px 26px -12px #9999996b, 0 4px 23px 0px #0000001f, 0 8px 10px -5px #99999933;
+}
+
+.lists .add-list-item {
+  margin: 1rem 0rem 1.6rem 0rem;
+  position: relative;
+}
+
+.lists .add-list-item .form-control {
+  height: 36px;
+}
+
+.lists .add-list-item .list-input {
+  overflow: hidden;
+}
+
+.lists .add-list-item .list-input input {
+  padding-left: 1.4rem;
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-bold);
+  background-size: 1.1rem;
+}
+
+.lists .add-list-item .list-input input:focus, .lists .add-list-item .list-input input:active, .lists .add-list-item .list-input input:not([value=""]) {
+  color: var(--font-color);
+  background-size: 1.1rem;
+  border-color: #d4c0f3;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem #d4c0f3;
+          box-shadow: 0 0 0 0.25rem #d4c0f3;
+}
+
+.lists .add-list-item .list-input input:focus::-webkit-input-placeholder {
+  color: var(--secondary-color);
+}
+
+.lists .add-list-item .list-input input:focus:-ms-input-placeholder {
+  color: var(--secondary-color);
+}
+
+.lists .add-list-item .list-input input:focus::-ms-input-placeholder {
+  color: var(--secondary-color);
+}
+
+.lists .add-list-item .list-input input:focus::placeholder {
+  color: var(--secondary-color);
+}
+
+.lists .add-list-item .list-input ::-webkit-input-placeholder {
+  color: var(--primary-color);
+}
+
+.lists .add-list-item .list-input :-ms-input-placeholder {
+  color: var(--primary-color);
+}
+
+.lists .add-list-item .list-input ::-ms-input-placeholder {
+  color: var(--primary-color);
+}
+
+.lists .add-list-item .list-input ::placeholder {
+  color: var(--primary-color);
+}
+
+.lists .add-list-item .btn-add-list-item {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  font-weight: var(--font-weight-bold);
+  -webkit-box-shadow: 0 2px 2px 0 #99999924, 0 3px 1px -2px #99999933, 0 1px 5px 0 #9999991f;
+          box-shadow: 0 2px 2px 0 #99999924, 0 3px 1px -2px #99999933, 0 1px 5px 0 #9999991f;
+  float: right;
+  margin-left: 1.6rem;
+}
+
+.lists .add-list-item .btn-add-list-item:hover, .lists .add-list-item .btn-add-list-item:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #7944a7;
+  -webkit-box-shadow: 0 14px 26px -12px #9999996b, 0 4px 23px 0px #0000001f, 0 8px 10px -5px #99999933;
+          box-shadow: 0 14px 26px -12px #9999996b, 0 4px 23px 0px #0000001f, 0 8px 10px -5px #99999933;
+}
+
+.lists .add-list-item .add-icon-blue {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.lists .list-wrapper h4 {
+  color: #8b9da7;
+  font-weight: 500;
+}
+
+.lists .list-wrapper ul li {
+  font-size: 1.2rem;
+  color: var(--font-color);
+  margin-bottom: 1rem;
+}
+
+.lists .comparison-results {
+  margin: 3rem 0rem;
+}
+
+.lists .comparison-results h1 {
+  margin-bottom: 3rem;
+}
+/*# sourceMappingURL=list.css.map */
